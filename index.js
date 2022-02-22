@@ -16,7 +16,9 @@ fa.value = a ;
 fa.addEventListener("input",function(){
     let c = this.value;
     let a = (c-32)*5/9 ;
-    
+    if(!Number.isInteger(a)){
+ a = a.toFixed(4);
+}
     cel.value = a ;
     
     });
